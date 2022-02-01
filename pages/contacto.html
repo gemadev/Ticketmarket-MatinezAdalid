@@ -1,56 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link  rel="icon"   href="../assets/icons/tickets.png" type="image/png" />
+    <link  rel="shortcut icon"   href="../assets/icons/tickets.png" type="image/png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5ce096fb2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Contacto</title>
 </head>    
 <body>
+    <header>
         <nav>
-            <a title="Ticketmarket" href="../index.html"><img src="../assets/icons/tickets.png" alt="Ticketmarket" /></a>
-            <h1>Ticketmarket</h1>
-            <ul>
-                <li><a href="musica.html">Musica</a></li>
+            <div class="logo-container">
+                <a title="Home" href="../index.html">
+                <img class="logo" src="../assets/icons/tickets.png" width="50px"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!-- <h1>Ticketmarket</h1>-->
+            <ul class="nav-list">
+                <li><a class="active" href="musica.html">Musica</a></li>
                 <li><a href="arteyteatro.html">Arte y Teatro</a></li>
                 <li><a href="festivales.html">Festivales</a></li>
                 <li><a href="deportes.html">Deportes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <!--Esto lo dejo para el dia que vea javascript-->
+         <a title="Search" href="../pages/search.html"><img src="../assets/icons/search.png" alt="Search" class="search"  /></a>
         </nav>
-    <section>
-        <h2>Contacto</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut quos ducimus sequi vitae illo dolore veniam, quidem illum laboriosam architecto suscipit officiis fugiat molestias? Vitae rem unde quidem nulla.</h3>
-        <form autocomplete="on">
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <label for="name">Nombre</label>
-                <input  type="text" id="name" name="user_name" placeholder="Juan Carlos" autofocus  maxlength="30" name>
-                <label for="email">Email</label>
-                <input type="email" name="user_mail" id="email" placeholder="juancarlos@mail.com"  maxlength="50">
-                <label for="phoneNumber">Numero de telefono</label>
-                <input type="tel" name="user_phoneNumber" id="phoneNumber" placeholder="541155555555"  maxlength="13">
-                <label for="inconvenient">Describa su incoveniente</label>
-                <textarea name="textarea" id="inconvenient" rows="10" cols="20"  maxlength="500">Describa su incoveniente</textarea>
-                <label for="checkBox">tildar</label>                
-                <input type="checkbox" id="checkBox" name="susnewsletter" value="newsletter">
-                <label for="susnewsletter" name="newslater"> Suscribirse a nuestro newsletter</label><br>
-                <input type="reset" name="reset" value="Borar el formulario">
-                <input type="submit" name="submit" value="enviar">
-            </fieldset>
-        </form>    
-    </section>    
+    </header>
+    <section class="main">
+    <div class="promo">
+        <h2>Promociones y descuentos</h2>
+    </div>
+        <div class="content">
+
+            <h1 class="brand">Contacto</h1>
+
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Contactanos</h3>
+                    <form action="">
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </p>
+                        <p>
+                            <label>Direccion de Email</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Telefono</label>
+                            <input type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="affair">
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </p>
+
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4> Mas Informacion</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Calle 1234 </li>
+                        <li><i class="fas fa-phone"></i> 1111111111 </li>
+                        <li><i class="fas fa-envelope-open-text"></i> contacto@ticketmarket.com</li>
+                    </ul>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet placeat expedita magni enim dolores provident eius laborum voluptatem explicabo!
+                    </p>
+                    <p>Ticketmarket.com</p>
+
+                </div>
+            </div>
+        </div>
+   
     <footer>
-        <section>
+        <div class="rrss-container">
             <ul>
-                <li><a title="Facebook" href="http://facebook.com/Ticketmarket" target="_blank"><img src="../assets/icons/facebook.png" alt="Facebook" /></a></li>
-                <li><a title="Instagram" href="http://instagram.com/Ticketmarket" target="_blank"><img src="../assets/icons/instagram.png" alt="Instagram" /></a></li>
-                <li><a title="Twitter" href="http://twitter.com/Ticketmarket" target="_blank"><img src="../assets/icons/twitter.png" alt="Twitter" /></a></li>
-                <li><a title="Whatsapp" href="https://api.whatsapp.com/send?phone=541155555555&text=Hola%20estoy%20interesando%20en%20X%20evento" target="_blank"><img src="../assets/icons/whatsapp.png" alt="Whatsapp" /></a></li>
-                <li><a title="Home" href="../index.html"><img src="../assets/icons/home.png" alt="Home" /></a></li>
+                <li><a href="http://facebook.com/Ticketmarket" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>  
+                <li><a href="http://instagram.com/Ticketmarket" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="http://twitter.com/Ticketmarket" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>  
+                <li><a href="https://api.whatsapp.com/send?phone=541155555555&text=Hola%20estoy%20interesando%20en%20X%20evento" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="../index.html" class="home"><i class="fas fa-home"></i></a></li>  
             </ul>
+        </div>
         </section>
         <h2>Copyright © 2021 Ticketmarket. All rights reserved. </h2>
     </footer>

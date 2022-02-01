@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link  rel="icon"   href="../assets/icons/tickets.png" type="image/png" />
+    <link  rel="shortcut icon"   href="../assets/icons/tickets.png" type="image/png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/18cf1fd8ae.js" crossorigin="anonymous"></script>
     <title>Festivales</title>
-</head>    
-<body>
+    <body>
         <nav>
-            <a title="Ticketmarket" href="../index.html"><img src="../assets/icons/tickets.png" alt="Ticketmarket" /></a>
-            <h1>Ticketmarket</h1>
-            <ul>
-                <li><a href="musica.html">Musica</a></li>
+            <div class="logo-container">
+                <a title="Home" href="../index.html">
+                <img class="logo" src="../assets/icons/tickets.png" width="50px"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!-- <h1>Ticketmarket</h1>-->
+            <ul class="nav-list">
+                <li><a class="active" href="musica.html">Musica</a></li>
                 <li><a href="arteyteatro.html">Arte y Teatro</a></li>
                 <li><a href="festivales.html">Festivales</a></li>
                 <li><a href="deportes.html">Deportes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <!--Esto lo dejo para el dia que vea javascript-->
-                <a title="Search" href="search.html"><img src="../assets/icons/search.png" alt="Search" /></a>
-        </nav>
-    <header> 
-        <h2>Promociones y descuentos</h2>
-    </header>   
-    <section>
-    <!--carousel-->
-    <img src="../assets/pictures/festivales.jpg" alt="festivales">
-    <!--las tablas son obsoletas, esto se hace con css y grid pero aun no lo vimos-->
-    <table>
-    <colgroup span="3" class="columns"></colgroup>
-    <tr>
-        <td>evento-1</td>
-        <td>evento-1</td>
-        <td>evento-1</td>
-    </tr>
-    <tr>
-        <td>evento-2</td>
-        <td>evento-2</td>
-        <td>evento-2</td>
-    </tr>
-    </table>
-    </section>
-    <footer>
-        <section>
-            <ul>
-                <li><a title="Facebook" href="http://facebook.com/Ticketmarket" target="_blank"><img src="../assets/icons/facebook.png" alt="Facebook" /></a></li>
-                <li><a title="Instagram" href="http://instagram.com/Ticketmarket" target="_blank"><img src="../assets/icons/instagram.png" alt="Instagram" /></a></li>
-                <li><a title="Twitter" href="http://twitter.com/Ticketmarket" target="_blank"><img src="../assets/icons/twitter.png" alt="Twitter" /></a></li>
-                <li><a title="Whatsapp" href="https://api.whatsapp.com/send?phone=541155555555&text=Hola%20estoy%20interesando%20en%20X%20evento" target="_blank"><img src="../assets/icons/whatsapp.png" alt="Whatsapp" /></a></li>
-                <li><a title="Home" href="../index.html"><img src="../assets/icons/home.png" alt="Home" /></a></li>
             </ul>
-        </section>
-            <h2>Copyright © 2021 Ticketmarket. All rights reserved. </h2>
-    </footer>
-</body>
-</html>
+            <!--Esto lo dejo para el dia que vea javascript-->
+         <a title="Search" href="../pages/search.html"><img src="../assets/icons/search.png" alt="Search" class="search"  /></a>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="promo">
+            <h2>Promociones y descuentos</h2>
+        </div> 
+            <section>
+                <div class="grid-container">
+                <div class="grid-item"><img src="../assets/pictures/deportes/1.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/2.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/3.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/4.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/5.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/6.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/7.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/8.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/9.png"></div>
+                <div class="grid-item"><img src="../assets/pictures/deportes/10.png"></div>
+            </div>
+            </section>
+        <footer>
+            <div class="rrss-container">
+                <ul>
+                    <li><a href="http://facebook.com/Ticketmarket" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>  
+                    <li><a href="http://instagram.com/Ticketmarket" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="http://twitter.com/Ticketmarket" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>  
+                    <li><a href="https://api.whatsapp.com/send?phone=541155555555&text=Hola%20estoy%20interesando%20en%20X%20evento" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="../index.html" class="home"><i class="fas fa-home"></i></a></li>  
+                </ul>
+            </div>
+                <p>Copyright © 2021 Ticketmarket. All rights reserved. </p>
+        </footer>
+    </body>
+    </html>
