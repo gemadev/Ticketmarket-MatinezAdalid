@@ -17,10 +17,10 @@ body{
 nav{
     height: 75px;
     width: 100%;
-    background-color: white;
     display: flex;
     justify-content: space-between;
-    color: #404244;
+    color: #dfe7ef;
+  
 }   
 
 .grid-item{
@@ -172,7 +172,7 @@ nav{
 .nav-list li a {
     font-size: 20px;
     text-transform: uppercase;
-    color: #f1f1f1;
+    color: #dfe7ef;
 }
 
  .nav-list li a:hover{
@@ -239,7 +239,7 @@ nav{
     }
 
     .nav-list li a{
-        color: #314652;
+        color: #000000;;
     }
 
     .nav-list li a:hover {
