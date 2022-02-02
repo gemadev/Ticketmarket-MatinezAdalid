@@ -19,8 +19,9 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: #dfe7ef;
-  
+    color: #404244;
+    background: rgb(86,2,101);
+   background: linear-gradient(90deg, rgba(86,2,101,1) 0%, rgba(121,9,107,1) 35%, rgba(94,0,255,1) 100%);
 }   
 
 .grid-item{
@@ -239,7 +240,7 @@ nav{
     }
 
     .nav-list li a{
-        color: #000000;;
+        color: #dfe7ef;;
     }
 
     .nav-list li a:hover {
