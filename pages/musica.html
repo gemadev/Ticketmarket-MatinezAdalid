@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -13,43 +15,66 @@
     <title>Musica</title>
 </head>    
 <body>
-    <nav>
-        <div class="logo-container">
-            <a title="Home" href="../index.html">
-            <img class="logo" src="../assets/icons/tickets.png" width="50px"></a>
-        </div>
-        <input type="checkbox" id="check">
-        <label for="check" class="hamburger-btn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <!-- <h1>Ticketmarket</h1>-->
-        <ul class="nav-list">
-            <li><a class="active" href="musica.html">Musica</a></li>
-            <li><a href="arteyteatro.html">Arte y Teatro</a></li>
-            <li><a href="festivales.html">Festivales</a></li>
-            <li><a href="deportes.html">Deportes</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <!--Esto lo dejo para el dia que vea javascript-->
-     <a title="Search" href="../pages/search.html"><img src="../assets/icons/search.png" alt="Search" class="search"  /></a>
-    </nav>
-</header>
-<section class="main">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                  <img src="../assets/icons/tickets.png" alt="ticket" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"  class="nav-link active" aria-current="page" >
+                    <a href="./musica.html">Musica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./arteyteatro.html">Arte y Teatro</a>
+                  </li>
+                  <li class="nav-item"  class="nav-link active" aria-current="page" >
+                    <a class="nav-link" href="./festivales.html">Festivales</a>
+                  </li>
+                  <li class="nav-item"  class="nav-link active" aria-current="page" >
+                    <a class="nav-link" href="./deportes.html">Deporte</a>
+                  </li>
+                  <li class="nav-item"  class="nav-link active" aria-current="page" >
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
 <div class="promo">
     <h2>Promociones y descuentos</h2>
 </div> 
-    <div class="grid-container">
-        <div class="grid-item"><img src="../assets/pictures/musica/1.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/2.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/3.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/4.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/5.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/6.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/7.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/8.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/9.png"></div>
-        <div class="grid-item"><img src="../assets/pictures/musica/10.png"></div>
-    </div>
+    <section id="galeria" class="container">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/1.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/2.png"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/3.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/4.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/5.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/6.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/7.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/8.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/9.png"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="../assets/pictures/musica/10.png"></div>
+</section>
     <footer>
         <div class="rrss-container">
             <ul>
