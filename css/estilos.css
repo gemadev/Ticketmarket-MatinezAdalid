@@ -1,0 +1,145 @@
+#galeria .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 250px;
+}
+
+#galeria img:hover {
+    border: 5px solid #f7f7f7
+
+}
+.contacto{
+    max-width: 800px;
+    margin:50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0,0.1);
+    padding: 30px;
+}
+
+.contacto .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    -webkit-background-clip:  text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form .form-field{
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus +.label,
+.contact-form .input-text.not-empty+ .label{
+    transform: translateY(-10px);
+}
+.contact-form .input-text:focus{
+    outline: none;
+}
+
+.contact-form .label{
+    position: relative;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+    padding-top: 20px
+}
+
+.contact-form .submit-btn{
+    display: inline-block;
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --whatsapp: #40df5d;
+    --home: rgb(146, 4, 134);
+}    
+
+.rrss-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.rrss-container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.rrss-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.rrss-container ul:hover a{
+    filter: blur(2px);
+}
+
+.rrss-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.rrss-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.rrss-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+.rrss-container ul li .twitter:hover{
+    background: var(--twitter);
+}
+.rrss-container ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
+.rrss-container ul li .home:hover{
+    background: var(--home);
+}
+
